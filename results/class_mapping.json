@@ -1,0 +1,55 @@
+{
+  "classes": [
+    "Corn___Common_Rust",
+    "Corn___Gray_Leaf_Spot",
+    "Corn___Healthy",
+    "Corn___Northern_Leaf_Blight",
+    "Potato___Early_Blight",
+    "Potato___Healthy",
+    "Potato___Late_Blight",
+    "Rice___Brown_Spot",
+    "Rice___Healthy",
+    "Rice___Leaf_Blast",
+    "Rice___Neck_Blast",
+    "Sugarcane___Bacterial_Blight",
+    "Sugarcane___Healthy",
+    "Sugarcane___Red_Rot",
+    "Wheat___Brown_Rust",
+    "Wheat___Healthy",
+    "Wheat___Yellow_Rust"
+  ],
+  "num_classes": 17,
+  "feature_names": [
+    "R_mean",
+    "R_std",
+    "G_mean",
+    "G_std",
+    "B_mean",
+    "B_std",
+    "H_mean",
+    "H_std",
+    "S_mean",
+    "S_std",
+    "V_mean",
+    "V_std",
+    "GLCM_contrast",
+    "GLCM_homogeneity",
+    "GLCM_energy",
+    "GLCM_correlation",
+    "GLCM_entropy"
+  ],
+  "best_hyperparameters": {
+    "knn": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    },
+    "random_forest": {
+      "max_depth": 20,
+      "n_estimators": 100
+    },
+    "svm": {
+      "C": 10.0,
+      "kernel": "rbf"
+    }
+  }
+}

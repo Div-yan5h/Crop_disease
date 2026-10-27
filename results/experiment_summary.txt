@@ -1,0 +1,35 @@
+================================================================================
+CROP DISEASE DETECTION USING MACHINE LEARNING — EXPERIMENT SUMMARY
+Course: CSET485 — AI & Society Mini Project (Bennett University)
+================================================================================
+
+1. DATASET
+- Dataset: Five Crop Diseases Dataset (shubham2703/five-crop-diseases-dataset)
+- Total Archive Images: 13,324 images
+- Classes: 17 classes across 5 crops (Corn, Potato, Rice, Wheat, Sugarcane)
+- Sample Used: Stratified representative subset of 2400 images (150 cap per class)
+  (17 classes * 150 = up to 2,550 theoretical; 2,400 actual because 3 sugarcane classes have 100 images)
+- Train/Test Split: Stratified 80:20 split (Train: 1920, Test: 480)
+
+2. FEATURE EXTRACTION
+- Color Features (12): Mean and Std of R, G, B + Mean and Std of H, S, V
+- Texture Features (5): GLCM Contrast, Homogeneity, Energy, Correlation, and Entropy
+- Total Feature Vector: 17 numerical dimensions per image
+
+3. TEST EVALUATION BENCHMARK
+                 Model Accuracy (%) Precision Recall Weighted F1 Macro F1 Train Time Inference Time
+   K-Nearest Neighbors       75.42%    0.7518 0.7542      0.7466   0.7370      1.45s         58.8ms
+         Random Forest       77.92%    0.7786 0.7792      0.7736   0.7661      1.12s          8.7ms
+Support Vector Machine       84.38%    0.8501 0.8438      0.8427   0.8397      0.15s         38.0ms
+
+4. MODEL SELECTION & PERFORMANCE LEADERS (INDEPENDENTLY SELECTED)
+- Highest Accuracy Model:      Support Vector Machine (84.38%)
+- Highest Weighted F1 Model:   Support Vector Machine (0.8427)
+- Highest Macro F1 Model:      Support Vector Machine (0.8397)
+
+5. SAVED ARTIFACTS
+- Models: knn_model.joblib, random_forest_model.joblib, svm_model.joblib
+- Scaler: feature_scaler.joblib
+- Metrics: model_comparison.csv, class_mapping.json
+- Plots: class_distribution.png, sample_images.png, model_performance_comparison.png, confusion_matrices_combined.png
+================================================================================

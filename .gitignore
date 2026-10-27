@@ -1,0 +1,43 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Python & Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Kaggle Credentials & Environment Secrets
+.env
+*.env
+kaggle.json
+.kaggle/
+
+# Dataset Files & Archives
+data/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Intermediate Feature Caches
+*.npz
+results/*.npz
+features_cache.*
+
+# Model Binaries & Heavy Checkpoints (Excluded from GitHub repository)
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.keras
+results/*.joblib
+results/*.pkl

@@ -30,3 +30,13 @@
 - [x] Re-run notebook end-to-end and verify outputs consistency.
 - [x] Update `README.md` with complete documentation, dataset URL, installation, verified results, and limitations.
 - [x] Perform final verification to ensure no secrets or unnecessary files will be committed.
+
+## Phase 3: Interactive Leaf Image Prediction Interface
+- [x] Implement simple, lightweight Streamlit interface (`app.py`) supporting JPG, JPEG, and PNG uploads.
+- [x] Configure Support Vector Machine (SVM) as default classifier with Random Forest and KNN options.
+- [x] Implement exact 64×64 resizing and 17-feature color and GLCM extraction pipeline matching the notebook.
+- [x] Load saved model binaries, scaler, and class mapping artifacts from `./results/`.
+- [x] Provide clear error instructions if model files are missing without inventing results.
+- [x] Display uploaded image, predicted crop, disease status, selected model, and diagnostic explanation.
+- [x] Test prediction workflow on sample images and verify feature scaling alignment.
+- [x] Update `requirements.txt` and `README.md` with Streamlit launch instructions.

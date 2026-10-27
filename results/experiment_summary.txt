@@ -18,9 +18,9 @@ Course: CSET485 — AI & Society Mini Project (Bennett University)
 
 3. TEST EVALUATION BENCHMARK
                  Model Accuracy (%) Precision Recall Weighted F1 Macro F1 Train Time Inference Time
-   K-Nearest Neighbors       75.42%    0.7518 0.7542      0.7466   0.7370      1.45s         58.8ms
-         Random Forest       77.92%    0.7786 0.7792      0.7736   0.7661      1.12s          8.7ms
-Support Vector Machine       84.38%    0.8501 0.8438      0.8427   0.8397      0.15s         38.0ms
+   K-Nearest Neighbors       75.42%    0.7518 0.7542      0.7466   0.7370      1.49s         42.3ms
+         Random Forest       77.92%    0.7786 0.7792      0.7736   0.7661      1.00s          8.0ms
+Support Vector Machine       84.38%    0.8501 0.8438      0.8427   0.8397      0.13s         44.3ms
 
 4. MODEL SELECTION & PERFORMANCE LEADERS (INDEPENDENTLY SELECTED)
 - Highest Accuracy Model:      Support Vector Machine (84.38%)

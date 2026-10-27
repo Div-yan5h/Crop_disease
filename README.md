@@ -93,6 +93,7 @@ All three models were evaluated on the exact same held-out test set ($N=480$ ima
 ## 📂 Repository File Structure
 ```
 Ai society/
+├── app.py                        # Interactive Streamlit leaf prediction application
 ├── crop_disease_detection.ipynb  # Primary self-contained Jupyter notebook
 ├── TASKS.md                      # Development and verification task checklist
 ├── requirements.txt              # Minimal Python dependencies
@@ -157,3 +158,14 @@ jupyter notebook crop_disease_detection.ipynb
 ```
 Select the `.venv` Python kernel and run all cells sequentially (**Kernel → Restart & Run All**).
 All outputs, figures, and benchmark metrics will execute automatically and refresh the files in `./results/`.
+
+### 5. Running the Interactive Prediction Application (Streamlit)
+To upload leaf images and obtain real-time disease predictions:
+
+```bash
+streamlit run app.py
+```
+This launches a local web interface in your browser (at `http://localhost:8501`):
+1. **Upload an Image**: Drag and drop any JPG, JPEG, or PNG crop leaf image.
+2. **Select a Model**: Defaults to **Support Vector Machine (SVM)** (highest evaluated accuracy: 84.38%), with options to compare predictions against **Random Forest** or **KNN**.
+3. **Instant Diagnosis**: Displays the predicted crop, disease condition, diagnostic explanation, and an interactive inspector showing all 17 extracted color and GLCM texture features.
